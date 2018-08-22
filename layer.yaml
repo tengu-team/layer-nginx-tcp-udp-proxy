@@ -1,0 +1,5 @@
+includes: ['layer:basic',
+           'layer:nginx-config',
+           'interface:tcp',
+           'interface:udp']
+repo: git@github.com:tengu-team/layer-nginx-tcp-udp-proxy.git

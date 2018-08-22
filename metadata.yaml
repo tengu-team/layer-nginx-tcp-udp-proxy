@@ -1,0 +1,12 @@
+name: nginx-tcp-udp-proxy
+summary: configure TCP/UDP NGINX proxies
+maintainer: Sander Borny <sander.borny@ugent.be>
+description: |
+  Layer for configuring TCP/UDP NGINX proxies.
+tags:
+  - misc
+requires:
+  tcp:
+    interface: tcp
+  udp:
+    interface: udp

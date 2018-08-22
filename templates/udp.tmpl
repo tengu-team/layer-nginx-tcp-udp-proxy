@@ -1,0 +1,10 @@
+upstream {{upstream_name}} {
+{%- for upstream in upstreams %}
+    server {{upstream}}:{{port}};
+{%- endfor %}
+}
+
+server {
+    listen {{port}} udp;    
+    proxy_pass {{upstream_name}};
+}
