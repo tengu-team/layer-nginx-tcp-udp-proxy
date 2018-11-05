@@ -43,7 +43,6 @@ def tcp_update():
     services = tcp.tcp_services()
     if configure_services(services, 'tcp', 'tcp.tmpl'):
         clear_flag('endpoint.tcp.update')
-        status_set('active', 'ready')
 
 
 ########################################################################
@@ -57,7 +56,6 @@ def udp_update():
     services = udp.udp_services()
     if configure_services(services, 'udp', 'udp.tmpl'): 
         clear_flag('endpoint.udp.update')
-        status_set('active', 'ready')
 
 
 ########################################################################
